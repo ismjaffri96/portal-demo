@@ -4,7 +4,7 @@
 
 1. Clone the project to your local machine. Through the command-line, traverse to the portal-demo directory.
 
-2. Run ```docker-compose up -d``` in the ```/portal-demo```. This will build your containers running 2 containers, the portal application, and a MySQL container instance. you can confirm that both of these are running with ```docker container ps```. You should see two container distinct container ID numbers in the background.
+2. Run ```docker-compose up -d``` in the ```/portal-demo``` directory. This will build your containers running 2 containers, the portal application, and a MySQL container instance. You can confirm that both of these are running with ```docker container ps```. You should see two container distinct container ID numbers in the background.
 
 ### SPRING BOOT APPLICATION
 - ```http://localhost:6868/api```
@@ -32,6 +32,6 @@ The schema can be found in the ```portal-demo-discussion.pdf```
 
 ### MYSQL DATABASE
 - The MySQL database should be automatically loaded with some sample data for the funds and investors table. These SQL queries are located in the ```/scripts/``` directory.
-- If for some reason the SQL scripts do not initialize automatically on container startup, the script is located in the scripts directory and the schema and database can be loaded on your local machine.
+- If for some reason the SQL scripts do not initialize automatically on container startup, the script is located in the scripts directory and the schema and database can be loaded on your local machine. I'm a bit new to docker and docker-compose, so let me know if there's any problems and I can give a demonstration instead
 
 This was a timeboxed demonstration. I look forward to more discussions where we can discuss design decisions, security concerns, and other ways to improve the project. Please shoot me an email at ismjaffri96@gmail.com if there are any questions about design or difficulties running the program. Look forward to speaking more about the opportunity at ARK PES!
