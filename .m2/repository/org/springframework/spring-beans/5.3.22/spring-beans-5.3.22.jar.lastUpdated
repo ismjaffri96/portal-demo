@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed Jul 27 17:53:18 UTC 2022
+https\://repo.maven.apache.org/maven2/.lastUpdated=1658944398662
+http\://0.0.0.0/.error=Could not transfer artifact org.springframework\:spring-beans\:jar\:5.3.22 from/to maven-default-http-blocker (http\://0.0.0.0/)\: Blocked mirror for repositories\: [JFrog (http\://oss.jfrog.org/artifactory/oss-snapshot-local/, default, releases+snapshots)]
+@default-maven-default-http-blocker-http\://0.0.0.0/.lastUpdated=1658944387997

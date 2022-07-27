@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed Jul 27 17:52:30 UTC 2022
+https\://repo.maven.apache.org/maven2/.lastUpdated=1658944350877
+http\://0.0.0.0/.error=Could not transfer artifact org.eclipse.jetty\:jetty-bom\:pom\:9.4.48.v20220622 from/to maven-default-http-blocker (http\://0.0.0.0/)\: Blocked mirror for repositories\: [JFrog (http\://oss.jfrog.org/artifactory/oss-snapshot-local/, default, releases+snapshots)]
+@default-maven-default-http-blocker-http\://0.0.0.0/.lastUpdated=1658944350732
