@@ -7,6 +7,7 @@
 2. Run ```docker-compose up -d``` in the ```/portal-demo```. This will build your containers running 2 containers, the portal application, and a MySQL container instance. you can confirm that both of these are running with ```docker container ps```. You should see two container distinct container ID numbers in the background.
 
 ### SPRING BOOT APPLICATION
+- ```http://localhost:6868```
 - I used a spring starter project from https://start.spring.io/ for this demonstration. This included an embedded webserver and a lot of dependencies to get started quickly.
 - Details on the schema, REST design, and future considerations can be found in the ```portal-demo-discussion.pdf``` in the main project directory.
 
