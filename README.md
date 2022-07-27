@@ -7,24 +7,24 @@
 2. Run ```docker-compose up -d``` in the ```/portal-demo```. This will build your containers running 2 containers, the portal application, and a MySQL container instance. you can confirm that both of these are running with ```docker container ps```. You should see two container distinct container ID numbers in the background.
 
 ### SPRING BOOT APPLICATION
-- ```http://localhost:6868```
+- ```http://localhost:6868/api```
 - I used a spring starter project from https://start.spring.io/ for this demonstration. This included an embedded webserver and a lot of dependencies to get started quickly.
 - Details on the schema, REST design, and future considerations can be found in the ```portal-demo-discussion.pdf``` in the main project directory.
 
 | HTTP METHOD      | ENDPOINT | CRUD ACTION      |
 | :--------        |    :----:   |          ---: |
-| GET      | /api/funds       | Read a list of funds   |
-| GET   | /api/funds/{fundId}        | Read a single fund      |
-| POST   | /api/funds        | Create a new fund      |
-| PUT   | /api/funds        | Update an existing fund      |
-| DELETE   | /api/funds/{fundId}        | Delete an existing fund      |
+| GET      | /funds       | Read a list of funds   |
+| GET   | /funds/{fundId}        | Read a single fund      |
+| POST   | /funds        | Create a new fund      |
+| PUT   | funds        | Update an existing fund      |
+| DELETE   | /funds/{fundId}        | Delete an existing fund      |
 
 With our bidirectional Many-To-Many mappings between Fund and Investor, we can also initiate associations between these entities through requests with these following endpoints
 
 | HTTP METHOD      | ENDPOINT | CRUD ACTION      |
 | :--------        |    :----:   |          ---: |
-| GET      | /api/funds/1/investors      | Reads the investors associated with fund of ID 1|
-| POST      | /api/funds/1/investors      | Updates the investors associated with fund of ID 1|
+| GET      | /funds/1/investors      | Reads the investors associated with fund of ID 1|
+| POST      | /funds/1/investors      | Updates the investors associated with fund of ID 1|
 
 The schema can be found in the ```portal-demo-discussion.pdf```
 
