@@ -8,6 +8,7 @@
 
 ### SPRING BOOT APPLICATION
 - ```http://localhost:6868/api```
+- ```http://localhost:6868/swagger-ui/```
 - I used a spring starter project from https://start.spring.io/ for this demonstration. This included an embedded webserver and a lot of dependencies to get started quickly.
 - Details on the schema, REST design, and future considerations can be found in the ```portal-demo-discussion.pdf``` in the main project directory.
 
