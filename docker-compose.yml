@@ -1,0 +1,21 @@
+version: "3"
+services:
+  springboot-docker-portal-demo:
+    image: springboot-docker-portal-demo
+    ports:
+      - "8080:8080"
+    networks:
+      - investment-mysql
+    depends_on:
+      - mysqldb
+ 
+  mysqldb:
+    image: mysql:8
+    networks:
+      - investment-mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=bootdb  
+
+networks:
+  investment-mysql: 
