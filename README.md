@@ -1,5 +1,7 @@
 # ARK PES PORTAL DEMO
 
+NOTE: Take a look at the ```portal-demo-discussion.pdf``` for more information.
+
 ### RUN INSTRUCTIONS
 
 1. Clone the project to your local machine. Through the command-line, traverse to the portal-demo directory.
