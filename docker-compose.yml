@@ -1,21 +1,24 @@
 version: "3"
 services:
   springboot-docker-portal-demo:
-    image: springboot-docker-portal-demo
+    image: ismjaffri96/springbootmysql	
     ports:
       - "8080:8080"
     networks:
-      - investment-mysql
+      - springboot-mysql-net
     depends_on:
       - mysqldb
  
   mysqldb:
-    image: mysql:8
+    image: ismjaffri96/mysql
+    volumes:
+      - "./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql"
+    command: mysqld --init-file="/tmp/database/init.sql"
     networks:
-      - investment-mysql
+      - springboot-mysql-net
     environment:
-      - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=bootdb  
+      - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_DATABASE=sa  
 
 networks:
-  investment-mysql: 
+  springboot-mysql-net: 
