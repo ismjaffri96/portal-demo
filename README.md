@@ -31,6 +31,6 @@ The schema can be found in the ```portal-demo-discussion.pdf```
 
 ### MYSQL DATABASE
 - The MySQL database should be automatically loaded with some sample data for the funds and investors table. These SQL queries are located in the /scripts/ directory.
-- Getting these instances dockerized was quite tricky. Communication between the Spring Boot and MySQL containers should work!
+- If for some reason the SQL scripts do not initialize automatically on container startup, the script is located in the scripts directory and the schema and database can be loaded on your local machine.
 
 This was a timeboxed demonstration. I look forward to more discussions where we can discuss design decisions, security concerns, and other ways to improve the project. Please shoot me an email at ismjaffri96@gmail.com if there are any questions about design or difficulties running the program. Look forward to speaking more about the opportunity at ARK PES!
