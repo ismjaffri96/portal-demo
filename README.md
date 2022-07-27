@@ -1,5 +1,4 @@
 # ARK PES PORTAL DEMO
-Portal Demo for ARK PES
 
 ### RUN INSTRUCTIONS
 
